@@ -5,7 +5,7 @@ interface unitComponentMapTypes {
 }
 
 const unitComponentMap : unitComponentMapTypes = {
-  noBodyError: UnitError
+  noBodyError: () => UnitError("No body field was provided")
 }
 
 export default unitComponentMap
