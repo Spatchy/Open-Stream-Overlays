@@ -6,7 +6,7 @@ interface props {
 const UnitError : React.FC = ({ message } : props) => {
   return (
     <div>
-      {message}
+      {"Error: " + message}
     </div>
   )
 }

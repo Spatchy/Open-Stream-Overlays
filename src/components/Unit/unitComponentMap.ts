@@ -1,11 +1,11 @@
 import UnitError from "./UnitError/UnitError"
 
-interface unitComponentMapTypes {
-  [key: string] : React.FC
+interface UnitComponentMapTypes {
+  [key: string]: React.FC<{ message?: string }>;
 }
 
-const unitComponentMap : unitComponentMapTypes = {
-  noBodyError: () => UnitError("No body field was provided")
+const unitComponentMap: UnitComponentMapTypes = {
+  unitError: UnitError
 }
 
 export default unitComponentMap
